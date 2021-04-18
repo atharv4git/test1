@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JS</title>
+</head>
+<body>
+	<center><h1>learning JS</h1></center>
+	<div id="layout">
+		<input id="input" onfocus="this.value=''" type="text" value="">
+		<button type="button" id="btn1" onclick="kar1()">More</button>
+		<button id="btn2" onclick="kar2()" type="button">Done</button>
+		<p id="output"></p>
+				
+	</div>
+
+
+	
+
+	<script type="text/javascript">
+		
+		function kar1(){
+			var arr = new Array();
+			var in = document.getElementById('input').value;
+			arr.push(in);
+		}	
+
+		function kar2(){
+			document.getElementById("output").value = arr;
+		}
+
+	</script>
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background: #121212;
+			color: #616161;
+		}
+		#layout{
+			margin: 50px;
+			padding: 50px;
+			background: #212121;
+		}
+		textarea{
+			color: green;
+			background: black;
+		}
+		input,textarea,button{
+			margin: 10px;
+		}
+	</style>
+
+
+</body>
+</html>

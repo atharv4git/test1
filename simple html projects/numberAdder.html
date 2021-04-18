@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JS</title>
+</head>
+<body>
+	<center><h1>learning JS</h1></center>
+	<div id="layout">
+		<p>dekhte hai...</p>
+		apna number daal
+		<input id="enter" type="text" value=""><br>
+		<textarea id="WriteHere" rows="20" cols="50"></textarea><br>
+		<button id="btn" onclick="show()">try it</button>
+	</div>
+
+
+	
+
+	<script type="text/javascript">
+		function show(){
+		var num=parseInt(document.getElementById('enter').value);
+		var text="";
+		while(num != Infinity){
+			num = num +num;
+			text = text + num + "\n";
+		}
+		document.getElementById('WriteHere').innerHTML=text;
+
+		
+		
+		}
+
+	</script>
+
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background: #121212;
+			color: #616161;
+		}
+		#layout{
+			margin: 50px;
+			padding: 50px;
+			background: #212121;
+		}
+		textarea{
+			color: green;
+			background: black;
+		}
+		input,textarea,button{
+			margin: 10px;
+		}
+	</style>
+
+
+</body>
+</html>
